@@ -2,7 +2,7 @@
 	import Dialog from '$lib/Dialog.svelte';
 	import ColorsList from '$lib/ColorsList.svelte';
 	const name = 'cats';
-	const message = 'This page only for free cats like <strong>The cat in boots!</strong>';
+	const message = 'This page only for free cats like <em>The cat in boots!</em>';
 	const alt = 'Cat in glasses and shirt';
 	const src_0 =
 		'https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg';
@@ -15,7 +15,15 @@
 		console.log(multiplying);
 		if (multiplying > 100) alert(multiplying.toString().toLowerCase());
 	}
-	let arrayColors = { colors: ['#F81876', '#F65E17', '#009EC4'] };
+	let arrayColors = {
+		colors: [
+			{ color: '#F81876', id: '#F81876', product: 'apple' },
+			{ color: '#F65E17', id: '#F65E17', product: 'banana' },
+			{ color: '#009EC4', id: '#009EC4', product: 'carrot' },
+			{ color: 'blue', id: 'blue', product: 'doughnut' },
+			{ color: 'green', id: 'green', product: 'egg' }
+		]
+	};
 	function openDialog() {
 		passengerCounter = passengerCounter + 1;
 	}

@@ -1,6 +1,7 @@
 <script>
 	import Dialog from '$lib/Dialog.svelte';
 	import ColorsList from '$lib/ColorsList.svelte';
+	import Posts from '$lib/Posts.svelte';
 	const name = 'cats';
 	const message = 'This page only for free cats like <em>The cat in boots!</em>';
 	const alt = 'Cat in glasses and shirt';
@@ -46,6 +47,7 @@
 {/if}
 
 <ColorsList {...arrayColors} />
+<Posts />
 
 <style>
 	h1 {
